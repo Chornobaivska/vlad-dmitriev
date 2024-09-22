@@ -1,0 +1,43 @@
+---
+import Layout from "@/components/Layout.astro";
+import Navbar from "@/components/Navbar.astro";
+import PortfolioItem from "@/components/PortfolioItem.astro";
+import myNetworkingImage from "@/images/my-networking.png";
+import onemotionImage from "@/images/one-motion.png";
+
+const portfolioItems = [
+  {
+    image: myNetworkingImage,
+    title: "My Networking",
+    description:
+      "A contact management tool that lets you sort, categorize, and track interactions. (my personal startup, currently in development)",
+    link: "/my-networking",
+  },
+  {
+    image: onemotionImage,
+    title: "Onemotion",
+    description:
+      "Developed a logo for the TV/YouTube project “Razom UA”, a platform for discussing important topics for Ukraine and the development of society.",
+    link: "/onemotion",
+  },
+] as const;
+---
+
+<Layout>
+  <div class="max-w-7xl mx-auto px-4">
+    <Navbar />
+
+    <div class="space-y-8">
+      {
+        portfolioItems.map((portfolioItem) => (
+          <PortfolioItem
+            image={portfolioItem.image}
+            title={portfolioItem.title}
+            description={portfolioItem.description}
+            link={portfolioItem.link}
+          />
+        ))
+      }
+    </div>
+  </div>
+</Layout>

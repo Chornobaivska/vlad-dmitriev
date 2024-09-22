@@ -1,0 +1,55 @@
+---
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/components/Layout.astro";
+import { Image } from "astro:assets";
+import VladDmitriev01 from "@/images/vlad_dmitriev01.png";
+import VladDmitriev02 from "@/images/vlad_dmitriev02.png";
+import VladDmitriev03 from "@/images/vlad_dmitriev03.png";
+---
+
+<Layout>
+  <div class="max-w-7xl mx-auto px-4">
+    <Navbar />
+
+    <div class="grid grid-cols-2 gap-32 mt-24">
+      <div class="mr-auto text-sm">
+        <p>
+          Hey, I’m Vlad, a passionate digital designer based in Kyiv, Ukraine.At
+          just 16, I’ve already dedicated over 3 years to the art of
+          design,completing more than 35 projects for both Ukrainian and
+          internationalclients. My work ranges from paid commissions to
+          voluntarycontributions, all driven by my love for creativity and a
+          desire tomake a positive impact.
+        </p>
+        <h1 class="text-2xl mt-6">My philosophy</h1>
+        <p class="mt-2">
+          I believe that design is more than just aesthetics—it's about solving
+          problems and creating experiences that resonate with people. My goal
+          is to bring a touch of joy and creativity into the world.
+        </p>
+        <h1 class="text-2xl mt-6">What inspires me</h1>
+        <p class="mt-2">
+          Beyond the screen, I find inspiration in travel, sports, and the
+          beauty of nature. These experiences fuel my creativity, offering fresh
+          perspectives and new ideas that I bring into my work.
+        </p>
+        <h1 class="text-2xl mt-6">My expertise</h1>
+        <p class="mt-2">
+          My expertise lies in brand, product, and graphic design. I’ve had the
+          pleasure of working with a diverse range of companies, helping them
+          bring their visions to life through creative and impactful design
+          solutions. Whether it’s crafting a brand identity or designing a
+          user-friendly product interface, I approach every project with
+          enthusiasm and attention to detail.
+        </p>
+      </div>
+      <div class="ml-auto space-x-4">
+        <div class="grid grid-col-2 gap-4">
+          <Image src={VladDmitriev01} alt="Vlad Dmitriev" class="col-span-2" />
+          <Image src={VladDmitriev02} alt="Vlad Dmitriev" class="col-span-1" />
+          <Image src={VladDmitriev03} alt="Vlad Dmitriev" class="col-span-1" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

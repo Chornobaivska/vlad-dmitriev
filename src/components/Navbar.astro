@@ -1,0 +1,18 @@
+---
+import NavLink from "@/components/NavLink.astro";
+
+const { white } = Astro.props;
+---
+
+<div class:list={["flex items-center py-6", white ? "text-white" : ""]}>
+  <div class="text-xl md:text-2xl lg:text-3xl xl:text-5xl tracking-wider">
+    Vlad Dmitriev
+  </div>
+
+  <div class="flex text-xs md:text-sm lg:text-base xl:text-lg gap-12 ml-auto">
+    <NavLink name="Home" href="/" white={white} />
+    <NavLink name="Works" href="/works" white={white} />
+    <NavLink name="About" href="/about" white={white} />
+    <NavLink name="Contact" href="/contact" white={white} />
+  </div>
+</div>

@@ -1,0 +1,38 @@
+---
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout>
+  <div class="max-w-7xl mx-auto px-4 h-screen flex flex-col">
+    <Navbar />
+
+    <div class="flex-grow flex items-center">
+      <div class="max-w-3xl w-full mx-auto space-y-4">
+        <a
+          href="mailto:dmitriev-dsgn@gmail.com"
+          class="flex justify-between text-4xl hover:opacity-60 transition-opacity duration-300"
+        >
+          <span>dmitriev-dsgn@gmail.com</span>
+          <span>(&#8250;)</span>
+        </a>
+        <div class="flex flex-row justify-between text-sm">
+          <a
+            href="https://www.instagram.com/dmitr13v/"
+            target="_blank"
+            class="hover:opacity-60 transition-opacity duration-300"
+          >
+            instagram: dmitr13v
+          </a>
+          <a
+            href="https://t.me/dmitr13v"
+            target="_blank"
+            class="hover:opacity-60 transition-opacity duration-300"
+          >
+            telegram: dmitr13v
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
