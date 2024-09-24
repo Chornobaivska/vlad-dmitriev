@@ -2,8 +2,12 @@
 import Layout from "@/components/Layout.astro";
 import Navbar from "@/components/Navbar.astro";
 import PortfolioItem from "@/components/PortfolioItem.astro";
-import myNetworkingImage from "@/images/my-networking.png";
+import myNetworkingImage from "@/images/mynetworking.png";
 import onemotionImage from "@/images/one-motion.png";
+import razomUaImage from "@/images/razom-ua.png";
+import puGrimImage from "@/images/pu-grim.png";
+import beckerImage from "@/images/becker.png";
+import kodkodAcademyImage from "@/images/kodkod-academy.png";
 
 const portfolioItems = [
   {
@@ -17,8 +21,36 @@ const portfolioItems = [
     image: onemotionImage,
     title: "Onemotion",
     description:
-      "Developed a logo for the TV/YouTube project “Razom UA”, a platform for discussing important topics for Ukraine and the development of society.",
+      "Developed a logo for the parent company OneMotion, uniting business projects with a focus on movement and systematization.",
     link: "/onemotion",
+  },
+  {
+    image: razomUaImage,
+    title: "Razom UA",
+    description:
+      "Developed a logo for the TV/YouTube project “Razom UA”, a platform for discussing important topics for Ukraine and the development of society.",
+    link: "/razom-ua",
+  },
+  {
+    image: puGrimImage,
+    title: 'PU "GRIM"',
+    description:
+      "Created an identity for the Ukrainian military trade union, which provides comprehensive protection and support to military personnel and veterans, promoting their growth and development.",
+    link: "/pu-grim",
+  },
+  {
+    image: beckerImage,
+    title: "Becker",
+    description:
+      "Developed a new style for the Becker retail chain brand, updating the identity, adding freshness and compliance with modern trends and values.",
+    link: "/becker",
+  },
+  {
+    image: kodkodAcademyImage,
+    title: "Kodkod Academy",
+    description:
+      "Created a logo for a course on finding yourself in IT, reflecting the goal and orientation towards career development in this area.",
+    link: "/kodkod-academy",
   },
 ] as const;
 ---

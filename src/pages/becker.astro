@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import beckerExmpl1Image from "@/images/becker-exmpl-1.png";
+import beckerExmpl2Image from "@/images/becker-exmpl-2.png";
+import beckerExmpl3Image from "@/images/becker-exmpl-3.png";
+import beckerExmpl4Image from "@/images/becker-exmpl-4.png";
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout>
+  <div class="grid grid-cols-12 gap-4 lg:gap-8 max-w-7xl mx-auto">
+    <div class="col-span-12 lg:col-span-8 space-y-4 pt-8">
+      <Image
+        src={beckerExmpl1Image}
+        alt="Developed a new style for the Becker retail chain brand, updating the identity, adding freshness and compliance with modern trends and values."
+      />
+      <Image src={beckerExmpl2Image} alt="Becker's first example " />
+      <Image src={beckerExmpl3Image} alt="Becker's second example " />
+      <Image src={beckerExmpl4Image} alt="Becker's third example " />
+    </div>
+    <div class="col-span-12 lg:col-span-4">
+      <div class="h-screen flex flex-col sticky top-0 pt-8 pb-4">
+        <h1 class="text-3xl tracking-wider">Becker</h1>
+        <p class="text-zinc-500 mt-2">
+          Developed a new style for the Becker retail chain brand, updating the
+          identity, adding freshness and compliance with modern trends and
+          values.
+        </p>
+        <h1 class="text-3xl tracking-wider mt-6">Year</h1>
+        <p class="text-zinc-500 mt-2">2023</p>
+        <div class="flex justify-between mt-auto">
+          <a href="/works" class="tracking-wider text-lg">Close &#215;</a>
+          <a href="/" class="tracking-wider text-lg">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
