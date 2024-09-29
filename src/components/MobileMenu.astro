@@ -1,0 +1,40 @@
+---
+import {
+  Astronav,
+  MenuItems,
+  MenuIcon,
+  OpenIcon,
+  CloseIcon,
+} from "astro-navbar";
+
+import MobileNavLink from "./MobileNavLink.astro";
+
+import openMenuSvg from "@/icons/open-menu.svg?raw";
+import closeMenuSvg from "@/icons/close-menu.svg?raw";
+
+const { white } = Astro.props;
+---
+
+<Astronav>
+  <MenuIcon>
+    <OpenIcon class="size-8 absolute top-7 right-8 z-20">
+      <Fragment set:html={openMenuSvg} />
+    </OpenIcon>
+    <CloseIcon class="size-8 absolute top-7 right-8 z-20">
+      <Fragment set:html={closeMenuSvg} />
+    </CloseIcon>
+  </MenuIcon>
+
+  <MenuItems class="hidden lg:flex">
+    <div
+      class="absolute z-10 inset-0 bg-black/30 backdrop-blur-sm items-center justify-center flex flex-col"
+    >
+      <ul class="text-center space-y-6">
+        <li><MobileNavLink name="Home" href="/" white={white} /></li>
+        <li><MobileNavLink name="Works" href="/works" white={white} /></li>
+        <li><MobileNavLink name="About" href="/about" white={white} /></li>
+        <li><MobileNavLink name="Contact" href="/contact" white={white} /></li>
+      </ul>
+    </div>
+  </MenuItems>
+</Astronav>

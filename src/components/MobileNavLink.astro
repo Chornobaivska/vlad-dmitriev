@@ -1,0 +1,13 @@
+---
+const { name, href, white } = Astro.props;
+---
+
+<div>
+  <a
+    href={href}
+    class:list={[
+      "text-4xl hover:border-b-2",
+      white ? "border-white" : "border-black",
+    ]}>{name}</a
+  >
+</div>
