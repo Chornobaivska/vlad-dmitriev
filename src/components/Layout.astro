@@ -1,3 +1,7 @@
+---
+import "aos/dist/aos.css";
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -18,5 +22,10 @@
   </head>
   <body class="font-sans antialiased">
     <slot />
+
+    <script>
+      import AOS from "aos";
+      AOS.init();
+    </script>
   </body>
 </html>

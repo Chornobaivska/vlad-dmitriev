@@ -6,12 +6,20 @@ const { white } = Astro.props;
 ---
 
 <div class:list={["flex items-center py-6", white ? "text-white" : ""]}>
-  <div class="text-xl md:text-2xl lg:text-3xl xl:text-5xl tracking-wider">
+  <div
+    class="text-xl md:text-2xl lg:text-3xl xl:text-5xl tracking-wider"
+    data-aos="fade-in"
+    data-aos-delay="100"
+    data-aos-duration="1000"
+  >
     <a href="/">Vlad Dmitriev</a>
   </div>
 
   <div
     class="hidden sm:flex text-xs md:text-sm lg:text-base xl:text-lg gap-12 ml-auto"
+    data-aos="fade-in"
+    data-aos-delay="100"
+    data-aos-duration="1000"
   >
     <NavLink name="Home" href="/" white={white} />
     <NavLink name="Works" href="/works" white={white} />
