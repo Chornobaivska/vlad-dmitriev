@@ -27,7 +27,10 @@ const { white } = Astro.props;
 
   <MenuItems class="hidden lg:flex">
     <div
-      class="absolute z-10 inset-0 bg-black/30 backdrop-blur-sm items-center justify-center flex flex-col"
+      class:list={[
+        "absolute z-10 inset-0 backdrop-blur-sm items-center justify-center flex flex-col",
+        white ? "bg-black/30" : "bg-white/50",
+      ]}
     >
       <ul class="text-center space-y-6">
         <li><MobileNavLink name="Home" href="/" white={white} /></li>

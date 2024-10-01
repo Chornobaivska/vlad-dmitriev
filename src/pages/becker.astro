@@ -8,8 +8,10 @@ import Layout from "@/components/Layout.astro";
 ---
 
 <Layout>
-  <div class="grid grid-cols-12 gap-4 lg:gap-8 max-w-7xl mx-auto">
-    <div class="col-span-12 lg:col-span-8 space-y-4 pt-8">
+  <div
+    class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-4 lg:gap-8 max-w-7xl mx-6 lg:mx-auto"
+  >
+    <div class="lg:basis-3/5 space-y-4 lg:pt-8">
       <Image
         src={beckerExmpl1Image}
         alt="Developed a new style for the Becker retail chain brand, updating the identity, adding freshness and compliance with modern trends and values."
@@ -18,19 +20,27 @@ import Layout from "@/components/Layout.astro";
       <Image src={beckerExmpl3Image} alt="Becker's second example " />
       <Image src={beckerExmpl4Image} alt="Becker's third example " />
     </div>
-    <div class="col-span-12 lg:col-span-4">
-      <div class="h-screen flex flex-col sticky top-0 pt-8 pb-4">
-        <h1 class="text-3xl tracking-wider">Becker</h1>
-        <p class="text-zinc-500 mt-2">
-          Developed a new style for the Becker retail chain brand, updating the
-          identity, adding freshness and compliance with modern trends and
-          values.
-        </p>
-        <h1 class="text-3xl tracking-wider mt-6">Year</h1>
-        <p class="text-zinc-500 mt-2">2023</p>
-        <div class="flex justify-between mt-auto">
-          <a href="/works" class="tracking-wider text-lg">Close &#215;</a>
-          <a href="/" class="tracking-wider text-lg">Home</a>
+
+    <div class="lg:flex-1">
+      <div
+        class="lg:h-screen flex flex-col-reverse lg:flex-col lg:sticky top-0 pt-8 pb-4"
+      >
+        <div class="mt-4 lg:mt-0">
+          <h1 class="text-3xl tracking-wider">Becker</h1>
+          <p class="text-zinc-500 mt-2">
+            Developed a new style for the Becker retail chain brand, updating
+            the identity, adding freshness and compliance with modern trends and
+            values.
+          </p>
+          <h1 class="text-3xl tracking-wider mt-4 lg:mt-6">Year</h1>
+          <p class="text-zinc-500 mt-2">2023</p>
+        </div>
+
+        <div class="flex justify-between pb-4 lg:pb-0 mt-auto">
+          <a href="/works" class="tracking-wider text-2xl lg:text-lg"
+            >Close &#215;</a
+          >
+          <a href="/" class="tracking-wider text-2xl lg:text-lg">Home</a>
         </div>
       </div>
     </div>

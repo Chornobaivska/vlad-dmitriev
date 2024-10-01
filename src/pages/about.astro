@@ -5,6 +5,13 @@ import { Image } from "astro:assets";
 import VladDmitriev01 from "@/images/vlad_dmitriev01.png";
 import VladDmitriev02 from "@/images/vlad_dmitriev02.png";
 import VladDmitriev03 from "@/images/vlad_dmitriev03.png";
+
+const text = `Hey, I’m Vlad, a passionate digital designer based in Kyiv, Ukraine.At
+          just 16, I’ve already dedicated over 3 years to the art of
+          design,completing more than 35 projects for both Ukrainian and
+          internationalclients. My work ranges from paid commissions to
+          voluntarycontributions, all driven by my love for creativity and a
+          desire tomake a positive impact.`;
 ---
 
 <Layout>
@@ -14,12 +21,7 @@ import VladDmitriev03 from "@/images/vlad_dmitriev03.png";
     <div class="grid grid-cols-2 gap-32 mt-24">
       <div class="mr-auto text-sm">
         <p>
-          Hey, I’m Vlad, a passionate digital designer based in Kyiv, Ukraine.At
-          just 16, I’ve already dedicated over 3 years to the art of
-          design,completing more than 35 projects for both Ukrainian and
-          internationalclients. My work ranges from paid commissions to
-          voluntarycontributions, all driven by my love for creativity and a
-          desire tomake a positive impact.
+          {text}
         </p>
         <h1 class="text-2xl mt-6">My philosophy</h1>
         <p class="mt-2">
