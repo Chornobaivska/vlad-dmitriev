@@ -1,0 +1,50 @@
+---
+import { Image } from "astro:assets";
+import puGrimExmpl1Image from "@/images/pu-grim/pu-grim-exmpl-1.png";
+import puGrimExmpl2Image from "@/images/pu-grim/pu-grim-exmpl-2.png";
+import puGrimExmpl3Image from "@/images/pu-grim/pu-grim-exmpl-3.png";
+import puGrimExmpl4Image from "@/images/pu-grim/pu-grim-exmpl-4.png";
+import puGrimExmpl5Image from "@/images/pu-grim/pu-grim-exmpl-5.png";
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout>
+  <div
+    class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-4 lg:gap-8 max-w-7xl mx-6 lg:mx-auto"
+  >
+    <div class="lg:basis-3/5 space-y-4 lg:pt-8">
+      <Image
+        src={puGrimExmpl1Image}
+        alt="Created an identity for the Ukrainian military trade union, which provides comprehensive protection and support to military personnel and veterans, promoting their growth and development."
+      />
+      <Image src={puGrimExmpl2Image} alt="PU Grim example " />
+      <Image src={puGrimExmpl3Image} alt="PU Grim example " />
+      <Image src={puGrimExmpl4Image} alt="PU Grim example " />
+      <Image src={puGrimExmpl5Image} alt="PU Grim example " />
+    </div>
+
+    <div class="lg:flex-1">
+      <div
+        class="lg:h-screen flex flex-col-reverse lg:flex-col lg:sticky top-0 pt-8 pb-4"
+      >
+        <div class="mt-4 lg:mt-0">
+          <h1 class="text-3xl tracking-wider">PU "Grim"</h1>
+          <p class="text-zinc-500 mt-2">
+            Created an identity for the Ukrainian military trade union, which
+            provides comprehensive protection and support to military personnel
+            and veterans, promoting their growth and development.
+          </p>
+          <h1 class="text-3xl tracking-wider mt-4 lg:mt-6">Year</h1>
+          <p class="text-zinc-500 mt-2">2024</p>
+        </div>
+
+        <div class="flex justify-between pb-4 lg:pb-0 mt-auto">
+          <a href="/works" class="tracking-wider text-2xl lg:text-lg"
+            >Close &#215;</a
+          >
+          <a href="/" class="tracking-wider text-2xl lg:text-lg">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

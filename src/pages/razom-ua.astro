@@ -1,0 +1,52 @@
+---
+import { Image } from "astro:assets";
+import razomUaExmpl1Image from "@/images/razom-ua/razom-ua-exmpl-1.png";
+import razomUaExmpl2Image from "@/images/razom-ua/razom-ua-exmpl-2.png";
+import razomUaExmpl3Image from "@/images/razom-ua/razom-ua-exmpl-3.png";
+import razomUaExmpl4Image from "@/images/razom-ua/razom-ua-exmpl-4.png";
+import razomUaExmpl5Image from "@/images/razom-ua/razom-ua-exmpl-5.png";
+import razomUaExmpl6Image from "@/images/razom-ua/razom-ua-exmpl-6.png";
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout>
+  <div
+    class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-4 lg:gap-8 max-w-7xl mx-6 lg:mx-auto"
+  >
+    <div class="lg:basis-3/5 space-y-4 lg:pt-8">
+      <Image
+        src={razomUaExmpl1Image}
+        alt="Developed a logo for the TV/YouTube project “Razom UA”, a platform for discussing important topics for Ukraine and the development of society."
+      />
+      <Image src={razomUaExmpl2Image} alt="Razom UA example " />
+      <Image src={razomUaExmpl3Image} alt="Razom UA example " />
+      <Image src={razomUaExmpl4Image} alt="Razom UA example " />
+      <Image src={razomUaExmpl5Image} alt="Razom UA example " />
+      <Image src={razomUaExmpl6Image} alt="Razom UA example " />
+    </div>
+
+    <div class="lg:flex-1">
+      <div
+        class="lg:h-screen flex flex-col-reverse lg:flex-col lg:sticky top-0 pt-8 pb-4"
+      >
+        <div class="mt-4 lg:mt-0">
+          <h1 class="text-3xl tracking-wider">Razom UA</h1>
+          <p class="text-zinc-500 mt-2">
+            Developed a logo for the TV/YouTube project “Razom UA”, a platform
+            for discussing important topics for Ukraine and the development of
+            society.
+          </p>
+          <h1 class="text-3xl tracking-wider mt-4 lg:mt-6">Year</h1>
+          <p class="text-zinc-500 mt-2">2024</p>
+        </div>
+
+        <div class="flex justify-between pb-4 lg:pb-0 mt-auto">
+          <a href="/works" class="tracking-wider text-2xl lg:text-lg"
+            >Close &#215;</a
+          >
+          <a href="/" class="tracking-wider text-2xl lg:text-lg">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

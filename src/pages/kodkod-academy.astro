@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import kodkodAcademyExmpl1Image from "@/images/kodkod-academy/kodkod-academy-exmpl-1.png";
+import kodkodAcademyExmpl2Image from "@/images/kodkod-academy/kodkod-academy-exmpl-2.png";
+import kodkodAcademyExmpl3Image from "@/images/kodkod-academy/kodkod-academy-exmpl-3.png";
+import kodkodAcademyExmpl4Image from "@/images/kodkod-academy/kodkod-academy-exmpl-4.png";
+import kodkodAcademyExmpl5Image from "@/images/kodkod-academy/kodkod-academy-exmpl-5.png";
+import kodkodAcademyExmpl6Image from "@/images/kodkod-academy/kodkod-academy-exmpl-6.png";
+import Layout from "@/components/Layout.astro";
+---
+
+<Layout>
+  <div
+    class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-4 lg:gap-8 max-w-7xl mx-6 lg:mx-auto"
+  >
+    <div class="lg:basis-3/5 space-y-4 lg:pt-8">
+      <Image
+        src={kodkodAcademyExmpl1Image}
+        alt="Created a logo for a course on finding yourself in IT, reflecting the goal and orientation towards career development in this area."
+      />
+      <Image src={kodkodAcademyExmpl2Image} alt="Kodkod Academy example" />
+      <Image src={kodkodAcademyExmpl3Image} alt="Kodkod Academy example" />
+      <Image src={kodkodAcademyExmpl4Image} alt="Kodkod Academy example" />
+      <Image src={kodkodAcademyExmpl5Image} alt="Kodkod Academy example" />
+      <Image src={kodkodAcademyExmpl6Image} alt="Kodkod Academy example" />
+    </div>
+
+    <div class="lg:flex-1">
+      <div
+        class="lg:h-screen flex flex-col-reverse lg:flex-col lg:sticky top-0 pt-8 pb-4"
+      >
+        <div class="mt-4 lg:mt-0">
+          <h1 class="text-3xl tracking-wider">Kodkod Academy</h1>
+          <p class="text-zinc-500 mt-2">
+            Created a logo for a course on finding yourself in IT, reflecting
+            the goal and orientation towards career development in this area.
+          </p>
+          <h1 class="text-3xl tracking-wider mt-4 lg:mt-6">Year</h1>
+          <p class="text-zinc-500 mt-2">2024</p>
+        </div>
+
+        <div class="flex justify-between pb-4 lg:pb-0 mt-auto">
+          <a href="/works" class="tracking-wider text-2xl lg:text-lg"
+            >Close &#215;</a
+          >
+          <a href="/" class="tracking-wider text-2xl lg:text-lg">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

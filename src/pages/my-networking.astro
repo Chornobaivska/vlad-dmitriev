@@ -1,8 +1,11 @@
 ---
 import { Image } from "astro:assets";
-import myNetworkingImage from "@/images/mynetworking.png";
-import myNetworkingExmpl1Image from "@/images/my-networking-exmpl-1.png";
-import myNetworkingExmpl2Image from "@/images/my-networking-exmpl-2.png";
+import myNetworking1Image from "@/images/my-networking/my-networking-exmpl-1.png";
+import myNetworkingExmpl2Image from "@/images/my-networking/my-networking-exmpl-2.png";
+import myNetworkingExmpl3Image from "@/images/my-networking/my-networking-exmpl-3.png";
+import myNetworkingExmpl4Image from "@/images/my-networking/my-networking-exmpl-4.png";
+import myNetworkingExmpl5Image from "@/images/my-networking/my-networking-exmpl-5.png";
+import myNetworkingExmpl6Image from "@/images/my-networking/my-networking-exmpl-6.png";
 import Layout from "@/components/Layout.astro";
 ---
 
@@ -12,17 +15,14 @@ import Layout from "@/components/Layout.astro";
   >
     <div class="lg:basis-3/5 space-y-4 lg:pt-8">
       <Image
-        src={myNetworkingImage}
+        src={myNetworking1Image}
         alt="A contact management tool that lets you sort, categorize, and track interactions. (my personal startup, currently in development)"
       />
-      <Image
-        src={myNetworkingExmpl1Image}
-        alt="My Networking's first example "
-      />
-      <Image
-        src={myNetworkingExmpl2Image}
-        alt="My Networking's second example "
-      />
+      <Image src={myNetworkingExmpl2Image} alt="My Networking's example" />
+      <Image src={myNetworkingExmpl3Image} alt="My Networking's example" />
+      <Image src={myNetworkingExmpl4Image} alt="My Networking's example" />
+      <Image src={myNetworkingExmpl5Image} alt="My Networking's example" />
+      <Image src={myNetworkingExmpl6Image} alt="My Networking's example" />
     </div>
 
     <div class="lg:flex-1">
